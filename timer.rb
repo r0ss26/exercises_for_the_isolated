@@ -9,4 +9,9 @@ def timer(input)
   end
 end
 
-timer(300)
+# Allows the user to set timer
+def set_reminder_time
+  reminder = $prompt.slider('How often would you like to be reminded? (minutes):', max: 60, step: 5, default: 10)
+  $settings[:reminder_time] = reminder
+  main_menu()
+end
