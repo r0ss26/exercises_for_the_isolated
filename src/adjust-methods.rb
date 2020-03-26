@@ -6,7 +6,6 @@ $settings = {
     :space => true
   }
 
-
 # Allows the user to set difficulty
 def set_difficulty
     difficulty_arr = ["Easy", "Medium", "Hard", "Go back"]
@@ -20,8 +19,6 @@ def set_difficulty
       main_menu()
     end
 end
-
-
 
 # Allows the user to set space
 def set_space_available
