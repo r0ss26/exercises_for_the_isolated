@@ -29,7 +29,7 @@ def display_settings()
 end
 
 def interval_timer
-  timer(5)#$settings[:exercise_time] * 60)
+  timer($settings[:reminder_time] * 60)
   select_exercise
 end
 
@@ -59,7 +59,7 @@ def select_exercise()
     puts "Start exercising".upcase
     puts $emoji_list[3]
     sleep 3
-    timer(5)#$settings[:exercise_time] * 60)
+    timer($settings[:exercise_time] * 60)
     interval_timer
   else
       main_menu()
