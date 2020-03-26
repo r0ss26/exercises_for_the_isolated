@@ -2,6 +2,7 @@
 $settings = {
     :difficulty => "Medium",
     :reminder_time => 10,
+    :exercise_time => 5,
     :space => true
   }
 
@@ -19,6 +20,8 @@ def set_difficulty
       main_menu()
     end
 end
+
+
 
 # Allows the user to set space
 def set_space_available
